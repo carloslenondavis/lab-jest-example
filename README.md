@@ -1,31 +1,29 @@
-![](https://cdn-images-1.medium.com/max/900/1*mumryCJDTedTv1nOxB5PJg.png)
+![](https://facebook.github.io/jest/img/opengraph.png)
 
-# AppTODO-101 with Grahql, Sequelize and Postgres
+# Laboratorio-101 de Jest con Grahql, Express, Sequelize ORM y Postgres
 
-Este es un Laboratorio-101 para iniciar con graphql, express, ORM Sequelize y PostgresSQL. Una experiencia enriquecedora y totalmente productiva. puede ser usado con cualquier cliente, pronto tendrán un ejemplo con react y angular como frontend clients;
+Este es un Laboratorio-101 para iniciar los test utilizando jest con graphql, express, ORM Sequelize y PostgresSQL. Una experiencia enriquecedora y totalmente productiva. puede ser usado con cualquier cliente, pronto tendrán un ejemplo con react y angular como frontend clients;
 * Nota: Este solo es un jumping a graphql, sequelize y postgres.
 
 ## Iniciando
 
-Estas son las instrucciones para poder correr el projecto en tu local. 
+Estas son las instrucciones para poder correr el proyecto en tu local. 
 
 ### Prerrequisitos
 
-```
 * Tener instalado un editor, para este ejemplo se utilizó [VSCode ^1.20.1](https://code.visualstudio.com/)
 * Instalar cualquier bd SQL de preferencia, Para el ejemplo se utilizó [Postgress 10.2](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads)
 * Instalar [Nodejs](https://nodejs.org/es/)
 * Instalar [GIT](https://git-scm.com/)
-```
+* Tener creado la bd - *activity* -
 
 ### Installando
 
 Clonar o crear tu propia cuenta del repositorio
 
 ```
-git@github.com:clenondavis/lab-graphql-101.git
+https://github.com/clenondavis/lab-jest-example
 ```
-* Este repo esta configurado con ssh, para que puedas solicitar el acceso al autor y/o contribuyentes.
 
 Una vez clonado el proyecto, ya pueedes instalar las dependencias, ejecutando el cli de preferencia el comando
 
@@ -101,14 +99,14 @@ En progreso..
 
 ## Contribuyentes
 
-* La plantilla del readme de este laboratorio-101 fue creado por [Billie Thompson](https://gist.github.com/PurpleBooth)
+* La plantilla del readme de este graphql-example fue creado por [Billie Thompson](https://gist.github.com/PurpleBooth)
 * El creador y contribuyente activo del paquete de graphql con sequelize [Mick Hansen](https://github.com/mickhansen)
 
 
 ## Colaborador
 
-Tu contribución es importante. Para contribuir o ser colaborador de este laboratorio-101
-* Dale tu estrella a este laboratorio-101
+Tu contribución es importante. Para contribuir o ser colaborador de este graphql-example
+* Dale tu estrella a este graphql-example
 * Seguí al repositorio para recibir notificaciones de mejoras continuas
 * Crear un pull request con la propuesta de cambio, espera y veras tu aporte compartido a la comunidad.
 * Ponte en contacto con el autor del laboratorio
@@ -122,13 +120,13 @@ Se usa GIT como control de versiones. Para acceder a la última version, ir a la
 
 ## Authors
 
-* **Carlos Lenon** - *Trabajo Inicial* - [clenondavis](https://github.com/clenondavis)
+* **Carlos Lenon** - *Love what i do* - [clenondavis](https://github.com/clenondavis)
 
-Ver el listado de los [colaboradores](https://github.com/clenondavis/lab-graphql-101/graphs/contributors) de este laboratorio-101.
+Ver el listado de los [colaboradores](https://github.com/js-ni/lab-graphql-example/graphs/contributors) de este lab-graphql-example.
 
 ## Licencia
 
-Este proyecto esta bajo la licencia MIT - ver detalle de esta [licencia](https://github.com/clenondavis/lab-graphql-101/blob/master/LICENSE)
+Este proyecto esta bajo la licencia MIT - ver detalle de esta [licencia](https://github.com/js-ni/lab-graphql-example/blob/master/LICENSE)
 
 ## Inspiración
 

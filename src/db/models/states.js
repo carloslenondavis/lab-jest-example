@@ -15,8 +15,6 @@ module.exports = (sequelize, DataTypes) => {
     },
     name: DataTypes.STRING
   }, {});
-  States.associate = function(models) {
-    States.hasMany(models.Tasks, { foreignKey: 'stateId'});    
-  };
+  States.associate = function(models) {};
   return States;
 };

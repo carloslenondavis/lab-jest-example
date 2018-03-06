@@ -1,6 +1,6 @@
 import models from './../../../src/db/models';
 
-let state = {
+let newState = {
     uui: 'fd277342-9db5-423c-999d-867082263fb2',
     name: 'DONE'
 };
@@ -14,7 +14,10 @@ describe('#stateModel using sequelize', () => {
         expect(models.States).toBeDefined();
     });
 
-    test('should add a new state', () => {
-
-    })
+    describe('Adding a new state', () => {        
+        test('It should add a new state record', () => {
+            expect(newState).toBeDefined();
+            expect();
+        })
+    });    
 });

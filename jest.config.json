@@ -3,7 +3,18 @@
     "verbose": true,
     "collectCoverage": true,
     "collectCoverageFrom": [
-        "./src/**/*.js",
-        "!./node_modules/**"
-    ]
+        "src/db/models/*.js",
+        "src/service/**/*.js",
+        "!src/db/models/index.js",
+        "!node_modules/**"
+    ],
+    "testEnvironment": "node",
+    "coverageThreshold": {
+        "global": {
+            "branches": 100,
+            "functions": 100,
+            "lines": 100,
+            "statements": 100
+        }
+    }
 }

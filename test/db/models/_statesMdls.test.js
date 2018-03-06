@@ -1,20 +1,39 @@
-import models from './../../../src/db/models';
+'use strict';
 
-let state = {
-    uui: 'fd277342-9db5-423c-999d-867082263fb2',
-    name: 'DONE'
-};
+import StatesCls from './../../../src/service/class/state/stateCls';
 
-beforeAll(() => {
-    models.sequelize.sync();
-});
+describe('STATE MODEL', () => {
+    let stateCls = new StatesCls();
 
-describe('#stateModel using sequelize', () => {
-    test('model state should be defined', () => {
-        expect(models.States).toBeDefined();
+    describe('model', () => {
+
+        test('It should be defined', () => {            
+            expect(stateCls).toBeDefined();            
+        });
+
+        test('It should has an id attribute', () => {            
+            expect(stateCls.id).toBeDefined();
+        });
+        
+        test('It should has an uuid attribute', () => {            
+            expect(stateCls.uuid).toBeDefined();
+        });
+        
+        test('It should has a name attribute', () => {
+            expect(stateCls.name).toBeDefined();
+        });
+        
+        test('It should has a createdAt attribute', () => {
+            expect(stateCls.createdAt).toBeDefined();
+        });
     });
 
-    test('should add a new state', () => {
-
-    })
+    describe('displaying records', () => {        
+        test('It should get a state record by "4b687a7d-d541-454d-938c-e012e82ceb62" uuid', () => {
+            expect.assertions(1);           
+            return stateCls.findById('4b687a7d-d541-454d-938c-e012e82ceb62').then((stateFetched) => {               
+                expect(stateCls.name).toBe('INACTIVE');
+            });           
+        })
+    });
 });

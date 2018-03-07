@@ -1,34 +1,42 @@
-import models from './../../../src/db/models';
-import states from './../../../src/db/models/states';
-import sequelize from 'sequelize';
+import Models from './../../../src/db/models';
+import Sequelize from 'sequelize';
 
-let newState = {
-    uui: 'fd277342-9db5-423c-999d-867082263fb2',
-    name: 'INACTIVE'
+const stateMock = {    
+    name: "IN PROGRESS"
 };
 
 beforeAll(() => {
-    models.sequelize.sync();
+    Models.sequelize.sync();
 });
 
 describe('state model', () => {
-    test('model state should be defined', () => {
-        expect(states).toBeDefined();
+    describe('model', () => {
+        test('It should be defined', () => {
+            expect(Models.States).toBeDefined();
+        });
+
+        test('It should has a uuid attribute', () => {
+
+        });
     });
 
-    describe('add', () => {        
+    describe('add', () => {
+        describe('types for state to send', () => {
+            describe('uuid', () => {
+                test('It should be defined', () => {
+                    expect(stateMock.uuid).toBeDefined();  
+                });
+                test('uuid should be a UUID type', () => {                
+                    expect(stateMock.uuid).toBe(Sequelize.UUID);
+                });
+            })
+        });
+        
         test('It should add a new state and return its', () => {
-            expect(newState).toBeDefined();
-            models.States.create(newState).then((newState) => {
-                expect(newState.uuid).toEqual(newState.name);
+            expect(stateMock).toBeDefined();
+            Models.States.create(stateMock).then((stateCreated) => {
+                expect(stateCreated.name).toEqual(stateMock.name);
             });
-
-            // models.sequelize.sync({
-            //     force: true,
-            //     logging: console.log
-            // }).then(() => {
-            //     return states.create(newState);
-            // });
         })
-    });    
+    });
 });

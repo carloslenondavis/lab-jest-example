@@ -10,11 +10,19 @@ export default class StateCls {
         this.updatedAt = new Date();
     }
 
-    fetchStatesById(_uuid) {
+    findById(_uuid) {
         try {
-            Models.States.findById(_uuid);
-        } catch (error) {
-            throw new Error(error);
+            return Models.States.findById(_uuid).then((stateFetched) => {
+                this.id = stateFetched.id;
+                this.uuid = stateFetched.uuid;
+                this.name = stateFetched.name;
+                this.createdAt = stateFetched.createdAt;
+                this.updatedAt = stateFetched.updatedAt;
+            }, (error) => {
+                console.error(error);                
+            });
+        } catch (error) {            
+            console.error(error);
         }
     }
 }

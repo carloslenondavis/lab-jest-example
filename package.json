@@ -1,5 +1,5 @@
 {
-  "name": "lab-graphql-101",
+  "name": "lab-jest-example",
   "version": "1.0.0",
   "description": "#laboratory101 for sequelize, graphql and express implementation with postgre as the sql bd",
   "main": "index.js",

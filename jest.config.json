@@ -4,12 +4,10 @@
     "collectCoverage": true,
     "collectCoverageFrom": [
         "src/db/models/*.js",
-<<<<<<< HEAD
-=======
-        "src/service/**/*.js",
->>>>>>> 5219adc9e585c6921151f3ce69090d1cd736bdbf
+        "src/entities/**/*.js",
         "!src/db/models/index.js",
-        "!node_modules/**"
+        "!node_modules/**",
+        "!test/**"
     ],
     "testEnvironment": "node",
     "coverageThreshold": {

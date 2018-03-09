@@ -1,16 +1,17 @@
 'use strict';
 
-import StatesCls from './../../../src/service/class/state/stateCls';
+import State from './../../../src/entities/state';
 
-describe('STATE MODEL', () => {
-    let stateCls = new StatesCls();
+describe('ENTITY STATE', () => {
+    let stateCls = new State();
 
-    describe('model', () => {
-
+    describe('Entity', () => {
         test('It should be defined', () => {            
             expect(stateCls).toBeDefined();            
         });
+    });
 
+    describe('Attributes', () => {
         test('It should has an id attribute', () => {            
             expect(stateCls.id).toBeDefined();
         });
@@ -28,10 +29,10 @@ describe('STATE MODEL', () => {
         });
     });
 
-    describe('displaying records', () => {        
-        test('It should get a state record by "4b687a7d-d541-454d-938c-e012e82ceb62" uuid', () => {
+    describe('Functions', () => {        
+        test('The findById should get a state by using the uuid as parameter', () => {
             expect.assertions(1);           
-            return stateCls.findById('4b687a7d-d541-454d-938c-e012e82ceb62').then((stateFetched) => {               
+            return stateCls.findById('FD277342-9DB5-423C-999D-867082263FB2').then((stateFetched) => {               
                 expect(stateCls.name).toBe('INACTIVE');
             });           
         })

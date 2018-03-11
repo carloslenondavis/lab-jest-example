@@ -20,7 +20,7 @@ export default class State {
             this.updatedAt = stateFetched.updatedAt;
             return stateFetched;
         } catch (error) {            
-            console.error(error);
+            return { error: error };
         }
     }
 }

@@ -1,8 +1,9 @@
 'use strict';
-
+import 'jest';
 import State from './../../../src/entities/state';
+import mockData from './../../common/_mock.data.cmn';
 
-describe('ENTITY STATE', () => {
+describe('#ENTITY STATE', () => {
     let stateCls = new State();
 
     describe('Entity', () => {
@@ -12,11 +13,11 @@ describe('ENTITY STATE', () => {
     });
 
     describe('Attributes', () => {
-        test('It should has an id attribute', () => {            
+        test('It should has an id attribute', () => {
             expect(stateCls.id).toBeDefined();
         });
         
-        test('It should has an uuid attribute', () => {            
+        test('It should has an uuid attribute', () => {
             expect(stateCls.uuid).toBeDefined();
         });
         
@@ -29,12 +30,22 @@ describe('ENTITY STATE', () => {
         });
     });
 
-    describe('Functions', () => {        
+    describe('Functions', () => {
         test('The findById should get a state by using the uuid as parameter', () => {
-            expect.assertions(1);           
-            return stateCls.findById('FD277342-9DB5-423C-999D-867082263FB2').then((stateFetched) => {               
+            expect.assertions(3);
+            return stateCls.findById(mockData.state.uuid).then((stateFetched) => {
+                expect(stateFetched).not.toBeUndefined();
+                expect(stateFetched).not.toHaveProperty('error');
                 expect(stateCls.name).toBe('INACTIVE');
-            });           
+            });
         })
+
+        test('The findById should return an error when the parameter uuid not set', () => {
+            expect.assertions(2);
+            return stateCls.findById(undefined).then((stateFetched) => {
+                expect(stateFetched).not.toBeUndefined();
+                expect(stateFetched).toHaveProperty('error');
+            });
+        });
     });
 });

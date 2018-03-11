@@ -22,7 +22,7 @@ export default {
                 returning: true
             }
         ).then((result) => {
-            var modelUpdated = result[1][0].dataValues;           
+            let modelUpdated = result[1][0].dataValues;           
             return models.States.findById(modelUpdated.uuid)
         });
     }

@@ -10,11 +10,11 @@ export default new GraphQLInputObjectType({
     description: 'the state for each task',
     fields: () => ({
         uuid: {
-            type: new GraphQLNonNull(GraphQLID),
+            type: GraphQLID,
             description: 'states uuid'
         },
         name: {
-            type: new GraphQLNonNull(GraphQLString),
+            type: GraphQLString,
             description: 'states name'
         }        
     })

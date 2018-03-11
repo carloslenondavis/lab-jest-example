@@ -1,8 +1,9 @@
 'use strict';
 
 import models from './../../../src/db/models';
+import mockData from './../../common/_mock.data.cmn';
 
-describe('DB/MODEL STATE', () => {
+describe('#DB/MODEL STATE', () => {
 
     describe('Model', () => {
         test('It should be defined', () => {
@@ -31,7 +32,7 @@ describe('DB/MODEL STATE', () => {
     describe('Static Method', () => {        
         test('The findById should get a state by using the uuid as parameter', () => {
             expect.assertions(1);
-            return models.States.findById('FD277342-9DB5-423C-999D-867082263FB2').then((stateFetched) => {               
+            return models.States.findById(mockData.state.uuid).then((stateFetched) => {               
                 expect(stateFetched.name).toBe('INACTIVE');
             });
         })

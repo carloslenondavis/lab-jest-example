@@ -2,7 +2,7 @@ import {
     GraphQLObjectType,
     GraphQLInt,
     GraphQLID,
-    GraphQLString
+    GraphQLString    
 } from 'graphql';
 
 export default new GraphQLObjectType({

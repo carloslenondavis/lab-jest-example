@@ -5,6 +5,7 @@
     "collectCoverageFrom": [
         "src/db/models/*.js",
         "src/entities/**/*.js",
+        "src/schema/queries/**/*.js",
         "!src/db/models/index.js",
         "!node_modules/**",
         "!test/**"

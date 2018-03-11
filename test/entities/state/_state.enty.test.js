@@ -1,8 +1,9 @@
 'use strict';
 
 import State from './../../../src/entities/state';
+import mockData from './../../common/_mock.data.cmn';
 
-describe('ENTITY STATE', () => {
+describe('#ENTITY STATE', () => {
     let stateCls = new State();
 
     describe('Entity', () => {
@@ -32,7 +33,7 @@ describe('ENTITY STATE', () => {
     describe('Functions', () => {        
         test('The findById should get a state by using the uuid as parameter', () => {
             expect.assertions(1);           
-            return stateCls.findById('FD277342-9DB5-423C-999D-867082263FB2').then((stateFetched) => {               
+            return stateCls.findById(mockData.state.uuid).then((stateFetched) => {
                 expect(stateCls.name).toBe('INACTIVE');
             });           
         })

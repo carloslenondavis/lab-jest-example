@@ -4,7 +4,7 @@
   "description": "#laboratory101 for sequelize, graphql and express implementation with postgre as the sql bd",
   "main": "index.js",
   "scripts": {
-    "test": "cross-env NODE_ENV=development jest --config ./jest.config.json --forceExit",
+    "test": "cross-env NODE_ENV=development jest --config ./jest.config.json",
     "start": "cross-env NODE_ENV=development nodemon",
     "doc": "jsdoc --configure .jsdoc.json --verbose"
   },

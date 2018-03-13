@@ -129,17 +129,17 @@ Para colaborar con la Comunidad  [JsNi](https://github.com/js-ni) y convertirte 
 
 ## Versionamiento
 
-Se usa GIT como control de versiones. Para acceder a la última version, ir a las [etiquetas del repositorio](https://github.com/clenondavis/lab-graphql-101/tags).
+Se usa GIT como control de versiones. Para acceder a la última version, ir a las [etiquetas del repositorio](https://github.com/clenondavis/lab-jest-example/tags).
 
 ## Authors
 
 * **Carlos Lenon** - *Love what i do* - [clenondavis](https://github.com/clenondavis)
 
-Ver el listado de los [colaboradores](https://github.com/js-ni/lab-graphql-example/graphs/contributors) de este lab-jest-example.
+Ver el listado de los [colaboradores](https://github.com/clenondavis/lab-jest-example/graphs/contributors) de este lab-jest-example.
 
 ## Licencia
 
-Este proyecto esta bajo la licencia MIT - ver detalle de esta [licencia](https://github.com/js-ni/lab-graphql-example/blob/master/LICENSE)
+Este proyecto esta bajo la licencia MIT - ver detalle de esta [licencia](https://github.com/clenondavis/lab-jest-example/blob/master/LICENSE)
 
 ## Inspiración
 

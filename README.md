@@ -22,8 +22,10 @@ Estas son las instrucciones para poder correr el proyecto en tu local.
 Clonar o crear tu propia cuenta del repositorio
 
 ```
-https://github.com/clenondavis/lab-jest-example
+git@github.com:clenondavis/lab-jest-example.git
 ```
+
+Este repo tiene configurado el acceso con ssh, para cualquier detalle de colaboración, solo manda un correo y te compartiré el acceso.
 
 Una vez clonado el proyecto, ya pueedes instalar las dependencias, ejecutando el cli de preferencia el comando
 

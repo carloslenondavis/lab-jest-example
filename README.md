@@ -3,7 +3,7 @@
 # Laboratorio-101 de Jest con Grahql, Express, Sequelize ORM y Postgres
 
 Este es un Laboratorio-101 para iniciar los test utilizando jest con graphql, express, ORM Sequelize y PostgresSQL. Una experiencia enriquecedora y totalmente productiva. puede ser usado con cualquier cliente, pronto tendrán un ejemplo con react y angular como frontend clients;
-* Nota: Este solo es un jumping a graphql, sequelize y postgres.
+* Nota: Este solo es un jumping de los test con jest.
 
 ## Iniciando
 
@@ -74,6 +74,12 @@ Para generar el modelo de la base, debes correr las migraciones escribiendo el c
 sequelize db:migrate
 ```
 
+Para crear un registro por defecto a la tabla States de la base de datos, debes ejecutar el comando del CLI de sequelize
+
+```
+sequelize db:seed:all
+```
+
 Para ver los comandos de sequelize en tu consola puede usar el comando
 
 ```
@@ -83,7 +89,13 @@ sequelize -H
 
 ## Test
 
-En progreso..
+Para efecto del laboratorio se incluyó los test para el modelo, los esquemas de graphql y las entidades.
+
+Para ejecutar los test ejecuta el comando
+
+```
+npm test
+```
 
 
 ## Desarrollado con
@@ -95,6 +107,7 @@ En progreso..
 * [express-graphql](https://github.com/graphql/express-graphql) - Middleware para graqhql
 * [nodemon](https://github.com/remy/nodemon#nodemon) - Monitorear los cambios en el código y automaticamente reiniciar el server
 * [babel](https://babeljs.io/) - Transpilador ES5/Es6
+* [jest](https://facebook.github.io/jest/) - Librería para los test
 
 
 ## Contribuyentes
@@ -122,7 +135,7 @@ Se usa GIT como control de versiones. Para acceder a la última version, ir a la
 
 * **Carlos Lenon** - *Love what i do* - [clenondavis](https://github.com/clenondavis)
 
-Ver el listado de los [colaboradores](https://github.com/js-ni/lab-graphql-example/graphs/contributors) de este lab-graphql-example.
+Ver el listado de los [colaboradores](https://github.com/js-ni/lab-graphql-example/graphs/contributors) de este lab-jest-example.
 
 ## Licencia
 
